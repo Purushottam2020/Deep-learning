@@ -92,7 +92,7 @@ model_relu.fit(X_train, y_train, epochs=n_epochs,batch_size=batch_size,callbacks
 
 plt.plot(np.arange(len(history_sigmoid.losses)), history_sigmoid.losses, label = 'sigmoid')
 plt.plot(np.arange(len(history_relu.losses)), history_relu.losses, label = 'relu')
-plt.title("Name: G.Siva Ashok (9920004530)")
+plt.title("Name: G.Purushottam")
 plt.suptitle('losses for sigmoid and relu model')
 plt.xlabel("no of batches")
 plt.ylabel("loss")
@@ -110,11 +110,13 @@ index = np.arange(len(model_sigmoid.layers))
 bar_width = 0.35
 plt.bar(index, w_sigmoid, bar_width, label = 'sigmoid', color = 'b', alpha = 0.4)
 plt.bar(index+bar_width, w_relu, bar_width, label = 'relu', color = 'r', alpha = 0.4)
-plt.title("Name: G.Siva Ashok (9920004530)")
+plt.title("Name: G. Purushottam")
 plt.suptitle("Maximum weights across layers for sigmoid and relu activation functions")
 plt.xlabel("Layer number")
 plt.ylabel("maximum weight")
 plt.legend(loc =0 )
 plt.xticks(index+bar_width/2, np.arange(8))
 plt.show()
+
+
 
