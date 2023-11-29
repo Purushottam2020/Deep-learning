@@ -80,14 +80,13 @@ n_epochs = 10
 batch_size = 256
 validation_split = 0.2
 history_sigmoid = history_loss()
-print("Name: G.Siva Ashok (9920004530)")
+
 model_sigmoid.fit(X_train, y_train, epochs=n_epochs,batch_size=batch_size,callbacks=[history_sigmoid],validation_split=validation_split, verbose=2)
 
 n_epochs = 10
 batch_size = 256
 validation_split = 0.2
 history_relu = history_loss()
-print("Name: G.Siva Ashok (9920004530)")
 model_relu.fit(X_train, y_train, epochs=n_epochs,batch_size=batch_size,callbacks=[history_relu],validation_split=validation_split, verbose=2)
 
 plt.plot(np.arange(len(history_sigmoid.losses)), history_sigmoid.losses, label = 'sigmoid')
